@@ -1,0 +1,14 @@
+[build]
+  # The directory to publish. "." means the root directory.
+  publish = "."
+  
+  # No build command is needed since it is a plain static HTML site.
+  command = ""
+
+[[headers]]
+  # Add default security headers for the site
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
