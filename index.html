@@ -118,20 +118,55 @@
   }
   .nav-links > li{
     display:flex;
+    position: relative;
   }
-  .nav-links a{
+  .nav-links > li > a {
     text-decoration:none;
     color:var(--nav-text);
     display:flex;
     align-items:center;
     padding:0 24px;
+    height: 100%;
     transition:background .2s ease;
   }
-  .nav-links a:hover{background:rgba(255,255,255,0.1);}
+  .nav-links > li > a:hover, .nav-links > li:hover > a {
+    background:var(--nav-hover);
+  }
+  .nav-links > li:hover .chevron {
+    transform: rotate(180deg);
+  }
   .chevron{
     width:16px;
     height:16px;
     margin-left:6px;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Dropdown Menu CSS */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--nav-hover);
+    min-width: 260px;
+    display: none;
+    flex-direction: column;
+    padding: 12px 0;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+  }
+  .has-dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+  .dropdown-menu a {
+    padding: 12px 24px;
+    color: var(--nav-text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s ease;
+  }
+  .dropdown-menu a:hover {
+    background: rgba(255,255,255,0.1);
   }
   .nav-actions{
     display:flex;
@@ -571,10 +606,38 @@
       </svg>
     </a>
     <ul class="nav-links">
-      <li class="has-dropdown"><a href="#">About Us <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a></li>
-      <li class="has-dropdown"><a href="#">Our Work <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a></li>
-      <li class="has-dropdown"><a href="#">Get Involved <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a></li>
-      <li class="has-dropdown"><a href="#">Resources <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a></li>
+      <li class="has-dropdown">
+        <a href="#">About Us <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown-menu">
+          <a href="#">Who We Are</a>
+          <a href="#">Core Values</a>
+          <a href="#">National Footprint & Regional Reach</a>
+        </div>
+      </li>
+      <li class="has-dropdown">
+        <a href="#">Our Work <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown-menu">
+          <a href="#">Legal Aid</a>
+          <a href="#">Advocacy</a>
+          <a href="#">Community Support</a>
+        </div>
+      </li>
+      <li class="has-dropdown">
+        <a href="#">Get Involved <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown-menu">
+          <a href="#">Volunteer</a>
+          <a href="#">Donate</a>
+          <a href="#">Partner With Us</a>
+        </div>
+      </li>
+      <li class="has-dropdown">
+        <a href="#">Resources <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown-menu">
+          <a href="#">Reports & Publications</a>
+          <a href="#">Legal Rights Guide</a>
+          <a href="#">News & Updates</a>
+        </div>
+      </li>
       <li><a href="#">Our Team</a></li>
     </ul>
     <div class="nav-actions">
