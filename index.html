@@ -6,26 +6,29 @@
 <title>CRONEF — Croatia–Nepal Friendship Association</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#12203D;
-    --ink-2:#1B3057;
-    --ink-3:#243E6E;
-    --paper:#F4EFE3;
-    --paper-2:#EAE1CB;
-    --paper-3:#DED2AF;
-    --crimson:#A5273B;
-    --crimson-2:#7E1D2E;
-    --checker-red:#C8323B;
-    --gold:#B98A3E;
-    --ink-soft:#8C9CC0;
-    --paper-soft:#6E6553;
-    --line-dark:rgba(244,239,227,0.16);
-    --line-paper:rgba(18,32,61,0.14);
+    --ink:#0A1930;
+    --ink-2:#112240;
+    --ink-3:#233554;
+    --paper:#FFFFFF;
+    --paper-2:#F8F9FA;
+    --paper-3:#E9ECEF;
+    --crimson:#0047AB;
+    --crimson-2:#003380;
+    --checker-red:#0047AB;
+    --gold:#005CE6;
+    --ink-soft:#495670;
+    --paper-soft:#8892B0;
+    --line-dark:rgba(0,0,0,0.08);
+    --line-paper:rgba(0,0,0,0.04);
     --radius-s:4px;
     --radius-m:10px;
     --radius-l:26px;
+    --nav-bg: #003399;
+    --nav-hover: #002266;
+    --nav-text: #FFFFFF;
   }
 
   *{box-sizing:border-box;}
@@ -43,7 +46,7 @@
   a{color:inherit;}
 
   h1,h2,h3{
-    font-family:'Fraunces',serif;
+    font-family:'Inter',sans-serif;
     font-weight:600;
     margin:0;
     letter-spacing:-0.01em;
@@ -78,76 +81,83 @@
     position:sticky;
     top:0;
     z-index:50;
-    background:rgba(18,32,61,0.92);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line-dark);
+    background:var(--nav-bg);
   }
   .nav-inner{
-    max-width:1180px;
+    display:flex;
+    align-items:stretch;
+    color:var(--nav-text);
+    height: 60px;
+    padding:0;
     margin:0 auto;
-    padding:16px 32px;
+  }
+  .nav-home{
     display:flex;
     align-items:center;
-    justify-content:space-between;
-    color:var(--paper);
+    justify-content:center;
+    width:60px;
+    background:var(--nav-hover);
+    color:var(--nav-text);
+    transition:background 0.2s ease;
   }
-  .brand{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    font-family:'Fraunces',serif;
-    font-weight:600;
-    font-size:17px;
-    letter-spacing:0.01em;
+  .nav-home:hover{
+    background:#001540;
   }
-  .brand .mark{width:30px;height:30px;flex:none;}
-  .brand small{
-    display:block;
-    font-family:'IBM Plex Mono',monospace;
-    font-weight:400;
-    font-size:10px;
-    letter-spacing:0.1em;
-    color:var(--ink-soft);
-    text-transform:uppercase;
-    margin-top:2px;
+  .icon-home{
+    width:24px;
+    height:24px;
   }
   .nav-links{
     display:flex;
-    gap:32px;
-    font-size:14px;
+    font-size:15px;
+    font-weight:500;
     list-style:none;
     margin:0;
     padding:0;
+    flex-grow:1;
+  }
+  .nav-links > li{
+    display:flex;
   }
   .nav-links a{
     text-decoration:none;
-    color:var(--paper);
-    opacity:0.8;
-    transition:opacity .2s ease;
-    position:relative;
+    color:var(--nav-text);
+    display:flex;
+    align-items:center;
+    padding:0 24px;
+    transition:background .2s ease;
   }
-  .nav-links a:hover{opacity:1;}
-  .nav-cta{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:12.5px;
-    letter-spacing:0.05em;
-    text-transform:uppercase;
-    text-decoration:none;
-    color:var(--ink);
-    background:var(--paper);
-    padding:10px 18px;
-    border-radius:999px;
-    transition:transform .2s ease, background .2s ease;
-    white-space:nowrap;
+  .nav-links a:hover{background:rgba(255,255,255,0.1);}
+  .chevron{
+    width:16px;
+    height:16px;
+    margin-left:6px;
   }
-  .nav-cta:hover{background:#fff;transform:translateY(-1px);}
+  .nav-actions{
+    display:flex;
+    align-items:center;
+    border-left:1px solid rgba(255,255,255,0.2);
+  }
+  .nav-search{
+    background:transparent;
+    border:none;
+    color:var(--nav-text);
+    width:60px;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:background 0.2s ease;
+  }
+  .nav-search:hover{background:rgba(255,255,255,0.1);}
   .nav-toggle{display:none;}
-
+  
   /* ---------- HERO ---------- */
   .hero{
     background:
-      radial-gradient(1100px 620px at 82% -8%, rgba(185,138,62,0.20), transparent 60%),
-      radial-gradient(900px 500px at -10% 110%, rgba(165,39,59,0.22), transparent 55%),
+      radial-gradient(1100px 620px at 82% -8%, rgba(0,92,230,0.20), transparent 60%),
+      radial-gradient(900px 500px at -10% 110%, rgba(0,71,171,0.22), transparent 55%),
       var(--ink);
     color:var(--paper);
     position:relative;
@@ -159,8 +169,8 @@
     position:absolute;
     inset:0;
     background-image:
-      linear-gradient(rgba(244,239,227,0.045) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(244,239,227,0.045) 1px, transparent 1px);
+      linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px);
     background-size:64px 64px;
     mask-image:radial-gradient(700px 500px at 70% 20%, black, transparent 75%);
     pointer-events:none;
@@ -355,7 +365,7 @@
     letter-spacing:.06em;
   }
   .step h4{
-    font-family:'Fraunces',serif;
+    font-family:'Inter',sans-serif;
     font-weight:500;
     font-size:19px;
     margin:12px 0 10px;
@@ -374,7 +384,7 @@
     overflow:hidden;
   }
   .quote-mark{
-    font-family:'Fraunces',serif;
+    font-family:'Inter',sans-serif;
     font-size:110px;
     color:var(--crimson);
     opacity:.16;
@@ -386,7 +396,7 @@
   blockquote{
     margin:0 auto;
     max-width:760px;
-    font-family:'Fraunces',serif;
+    font-family:'Inter',sans-serif;
     font-style:italic;
     font-weight:400;
     font-size:clamp(22px,3vw,32px);
@@ -555,31 +565,23 @@
 
 <nav class="nav">
   <div class="nav-inner">
-    <div class="brand">
-      <svg class="mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="19" stroke="#B98A3E" stroke-width="1.3"/>
-        <path d="M20 6 L20 34" stroke="#B98A3E" stroke-width="1" opacity="0.35"/>
-        <path d="M11 13h7v6l-3.5 4-3.5-4z" fill="#A5273B"/>
-        <g fill="#F4EFE3">
-          <rect x="21" y="12" width="3" height="3"/><rect x="24" y="12" width="3" height="3"/>
-          <rect x="27" y="12" width="3" height="3"/><rect x="21" y="15" width="3" height="3" fill="#0F1B33"/>
-          <rect x="24" y="15" width="3" height="3"/><rect x="27" y="15" width="3" height="3" fill="#0F1B33"/>
-          <rect x="21" y="18" width="3" height="3"/><rect x="24" y="18" width="3" height="3" fill="#0F1B33"/>
-          <rect x="27" y="18" width="3" height="3"/>
-        </g>
+    <a href="/" class="nav-home">
+      <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" class="icon-home">
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
       </svg>
-      <div>
-        CRONEF
-        <small>Croatia–Nepal Friendship</small>
-      </div>
-    </div>
+    </a>
     <ul class="nav-links">
-      <li><a href="#mandate">Our Mandate</a></li>
-      <li><a href="#process">Legal Aid</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li class="has-dropdown"><a href="#">About Us <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a></li>
+      <li class="has-dropdown"><a href="#">Our Work <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a></li>
+      <li class="has-dropdown"><a href="#">Get Involved <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a></li>
+      <li class="has-dropdown"><a href="#">Resources <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a></li>
+      <li><a href="#">Our Team</a></li>
     </ul>
-    <a class="nav-cta" href="#contact">Get Help →</a>
+    <div class="nav-actions">
+      <button class="nav-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      </button>
+    </div>
   </div>
 </nav>
 
@@ -605,19 +607,19 @@
         <defs>
           <path id="ringpath" d="M160,20 a140,140 0 1,1 -0.1,0" fill="none"/>
         </defs>
-        <circle cx="160" cy="160" r="150" fill="none" stroke="#B98A3E" stroke-width="1"/>
-        <circle cx="160" cy="160" r="140" fill="none" stroke="#B98A3E" stroke-width="1.4"/>
-        <circle cx="160" cy="160" r="118" fill="none" stroke="#4A587D" stroke-width="1" stroke-dasharray="1 6"/>
+        <circle cx="160" cy="160" r="150" fill="none" stroke="var(--gold)" stroke-width="1"/>
+        <circle cx="160" cy="160" r="140" fill="none" stroke="var(--gold)" stroke-width="1.4"/>
+        <circle cx="160" cy="160" r="118" fill="none" stroke="var(--ink-soft)" stroke-width="1" stroke-dasharray="1 6"/>
         <text class="ring-text"><textPath href="#ringpath" startOffset="2%">CROATIA · NEPAL FRIENDSHIP ASSOCIATION · EST. OSIJEK ·</textPath></text>
 
         <!-- checkerboard fragment (Croatia) -->
         <g transform="translate(72,132)">
-          <g fill="#C8323B">
+          <g fill="var(--checker-red)">
             <rect x="0" y="0" width="18" height="18"/><rect x="36" y="0" width="18" height="18"/>
             <rect x="18" y="18" width="18" height="18"/><rect x="54" y="18" width="18" height="18"/>
             <rect x="0" y="36" width="18" height="18"/><rect x="36" y="36" width="18" height="18"/>
           </g>
-          <g fill="#F4EFE3">
+          <g fill="var(--paper)">
             <rect x="18" y="0" width="18" height="18"/><rect x="54" y="0" width="18" height="18"/>
             <rect x="0" y="18" width="18" height="18"/><rect x="36" y="18" width="18" height="18"/>
             <rect x="18" y="36" width="18" height="18"/><rect x="54" y="36" width="18" height="18"/>
@@ -626,12 +628,12 @@
 
         <!-- pennant fragment (Nepal) -->
         <g transform="translate(178,96)">
-          <path d="M0 0 H58 L20 40 H58 L14 92 H0 Z" fill="#A5273B" stroke="#B98A3E" stroke-width="1.4" stroke-linejoin="round"/>
-          <circle cx="24" cy="20" r="6" fill="#F4EFE3" opacity="0.9"/>
-          <path d="M18 66 l6 -10 l6 10 z" fill="#F4EFE3" opacity="0.9"/>
+          <path d="M0 0 H58 L20 40 H58 L14 92 H0 Z" fill="var(--crimson)" stroke="var(--gold)" stroke-width="1.4" stroke-linejoin="round"/>
+          <circle cx="24" cy="20" r="6" fill="var(--paper)" opacity="0.9"/>
+          <path d="M18 66 l6 -10 l6 10 z" fill="var(--paper)" opacity="0.9"/>
         </g>
 
-        <line x1="160" y1="90" x2="160" y2="230" stroke="#B98A3E" stroke-width="1" opacity="0.5"/>
+        <line x1="160" y1="90" x2="160" y2="230" stroke="var(--gold)" stroke-width="1" opacity="0.5"/>
         <text x="160" y="252" text-anchor="middle" font-family="IBM Plex Mono" font-size="10.5" letter-spacing="2" fill="#8C9CC0">SAFE MIGRATION</text>
         <text x="160" y="266" text-anchor="middle" font-family="IBM Plex Mono" font-size="10.5" letter-spacing="2" fill="#8C9CC0">LEGAL AID · INTEGRATION</text>
       </svg>
@@ -639,7 +641,7 @@
   </div>
 
   <div class="tear">
-    <svg preserveAspectRatio="none" viewBox="0 0 1200 34"><path d="M0,34 L0,14 L20,26 L40,10 L60,24 L80,8 L100,22 L120,12 L140,26 L160,10 L180,24 L200,8 L220,22 L240,12 L260,26 L280,10 L300,24 L320,8 L340,22 L360,12 L380,26 L400,10 L420,24 L440,8 L460,22 L480,12 L500,26 L520,10 L540,24 L560,8 L580,22 L600,12 L620,26 L640,10 L660,24 L680,8 L700,22 L720,12 L740,26 L760,10 L780,24 L800,8 L820,22 L840,12 L860,26 L880,10 L900,24 L920,8 L940,22 L960,12 L980,26 L1000,10 L1020,24 L1040,8 L1060,22 L1080,12 L1100,26 L1120,10 L1140,24 L1160,8 L1180,22 L1200,14 L1200,34 Z" fill="#F4EFE3"/></svg>
+    <svg preserveAspectRatio="none" viewBox="0 0 1200 34"><path d="M0,34 L0,14 L20,26 L40,10 L60,24 L80,8 L100,22 L120,12 L140,26 L160,10 L180,24 L200,8 L220,22 L240,12 L260,26 L280,10 L300,24 L320,8 L340,22 L360,12 L380,26 L400,10 L420,24 L440,8 L460,22 L480,12 L500,26 L520,10 L540,24 L560,8 L580,22 L600,12 L620,26 L640,10 L660,24 L680,8 L700,22 L720,12 L740,26 L760,10 L780,24 L800,8 L820,22 L840,12 L860,26 L880,10 L900,24 L920,8 L940,22 L960,12 L980,26 L1000,10 L1020,24 L1040,8 L1060,22 L1080,12 L1100,26 L1120,10 L1140,24 L1160,8 L1180,22 L1200,14 L1200,34 Z" fill="var(--paper)"/></svg>
   </div>
 </header>
 
@@ -757,8 +759,8 @@
       <div class="footer-brand">
         <div class="brand">
           <svg class="mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="20" cy="20" r="19" stroke="#B98A3E" stroke-width="1.3"/>
-            <path d="M11 13h7v6l-3.5 4-3.5-4z" fill="#A5273B"/>
+            <circle cx="20" cy="20" r="19" stroke="var(--gold)" stroke-width="1.3"/>
+            <path d="M11 13h7v6l-3.5 4-3.5-4z" fill="var(--crimson)"/>
           </svg>
           CRONEF
         </div>
