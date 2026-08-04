@@ -101,6 +101,13 @@ const translations = {
     "who_vision_p": { hr: "Budućnost u kojoj svaki radnik migrant može napredovati u sigurnom i pravno zaštićenom okruženju.", ne: "प्रत्येक आप्रवासी कामदारले सुरक्षित र कानुनी रूपमा सुरक्षित वातावरणमा फस्टाउन सक्ने भविष्य।", en: "A future where every migrant worker can thrive in a safe and legally protected environment." },
 
     "top_contact": { hr: "Kontakt", ne: "सम्पर्क", en: "Contact Us" },
+
+    "cv_1_title": { hr: "Integritet i transparentnost", ne: "अखण्डता र पारदर्शिता", en: "Integrity & Transparency" },
+    "cv_1_desc": { hr: "Djelujemo s potpunom iskrenošću i transparentnošću, osiguravajući povjerenje između radnika, poslodavaca i vlasti.", ne: "हामी कामदार, रोजगारदाता र अधिकारीहरूबीच विश्वास सुनिश्चित गर्दै पूर्ण इमानदारी र पारदर्शिताका साथ काम गर्छौं।", en: "We operate with complete honesty and transparency, ensuring trust between workers, employers, and authorities." },
+    "cv_2_title": { hr: "Pravičnost i pravda", ne: "समानता र न्याय", en: "Equity & Justice" },
+    "cv_2_desc": { hr: "Vjerujemo da svaki radnik zaslužuje pošten tretman, jednaku zaštitu pred zakonom i slobodu od iskorištavanja.", ne: "हामी विश्वास गर्छौं कि प्रत्येक कामदारले निष्पक्ष व्यवहार, कानून अन्तर्गत समान सुरक्षा, र शोषणबाट स्वतन्त्रताको हकदार छ।", en: "We believe every worker deserves fair treatment, equal protection under the law, and freedom from exploitation." },
+    "cv_3_title": { hr: "Osnaživanje", ne: "सशक्तिकरण", en: "Empowerment" },
+    "cv_3_desc": { hr: "Pružamo radnicima znanje, resurse i podršku zajednice koji su im potrebni za samopouzdano snalaženje u novom okruženju.", ne: "हामी कामदारहरूलाई उनीहरूको नयाँ वातावरणमा निर्धक्क भई नेभिगेट गर्न आवश्यक ज्ञान, स्रोतहरू र सामुदायिक समर्थन प्रदान गर्छौं।", en: "We provide workers with the knowledge, resources, and community support they need to confidently navigate their new environment." },
   };
 
   function setLanguage(lang) {
