@@ -11,61 +11,75 @@
 </head>
 <body>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="/" class="nav-home">
-      <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" class="icon-home">
-        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-      </svg>
+<header class="site-header">
+  <div class="top-header wrap">
+    <a href="/" class="top-logo">
+      <svg viewBox="0 0 40 40" style="width: 24px; height: 24px; margin-right: 8px;">
+        <circle cx="20" cy="20" r="20" fill="var(--checker-red)"></circle>
+      </svg> 
+      CRONEF
     </a>
-    <ul class="nav-links">
-      <li class="has-dropdown">
-        <a href="about.html"><span data-i18n="nav_about">About Us</span> <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a>
-        <div class="dropdown-menu">
-          <a href="about-who-we-are.html"><span data-i18n="nav_about_1">Who We Are</span></a>
-          <a href="about-core-values.html"><span data-i18n="nav_about_2">Core Values</span></a>
-          <a href="about-national-footprint.html"><span data-i18n="nav_about_3">National Footprint & Regional Reach</span></a>
-        </div>
-      </li>
-      <li class="has-dropdown">
-        <a href="work.html"><span data-i18n="nav_work">Our Work</span> <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a>
-        <div class="dropdown-menu">
-          <a href="work-legal-aid.html"><span data-i18n="nav_work_1">Legal Aid</span></a>
-          <a href="work-advocacy.html"><span data-i18n="nav_work_2">Advocacy</span></a>
-          <a href="work-community-support.html"><span data-i18n="nav_work_3">Community Support</span></a>
-        </div>
-      </li>
-      <li class="has-dropdown">
-        <a href="involved.html"><span data-i18n="nav_involved">Get Involved</span> <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a>
-        <div class="dropdown-menu">
-          <a href="involved-volunteer.html"><span data-i18n="nav_involved_1">Volunteer</span></a>
-          <a href="involved-donate.html"><span data-i18n="nav_involved_2">Donate</span></a>
-          <a href="involved-partner.html"><span data-i18n="nav_involved_3">Partner With Us</span></a>
-        </div>
-      </li>
-      <li class="has-dropdown">
-        <a href="resources.html"><span data-i18n="nav_resources">Resources</span> <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a>
-        <div class="dropdown-menu">
-          <a href="resources-reports.html"><span data-i18n="nav_resources_1">Reports & Publications</span></a>
-          <a href="resources-legal-guide.html"><span data-i18n="nav_resources_2">Legal Rights Guide</span></a>
-          <a href="resources-news.html"><span data-i18n="nav_resources_3">News & Updates</span></a>
-        </div>
-      </li>
-      <li><a href="team.html"><span data-i18n="nav_team">Our Team</span></a></li>
-    </ul>
-    
-    <div class="lang-switcher">
-      <button class="lang-btn active" data-lang="en">EN</button>
-      <button class="lang-btn" data-lang="hr">HR</button>
-      <button class="lang-btn" data-lang="ne">NE</button>
-    </div>
-    <div class="nav-actions">
-      <button class="nav-search">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-      </button>
-    </div>
+    <a href="contact.html" class="btn btn-primary" style="padding: 6px 14px; font-size: 11px;" data-i18n="top_contact">Contact Us</a>
   </div>
-</nav>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-home">
+        <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" class="icon-home">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li class="has-dropdown">
+          <a href="about.html"><span data-i18n="nav_about">About Us</span> <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="about-who-we-are.html"><span data-i18n="nav_about_1">Who We Are</span></a>
+            <a href="about-core-values.html"><span data-i18n="nav_about_2">Core Values</span></a>
+            <a href="about-national-footprint.html"><span data-i18n="nav_about_3">National Footprint & Regional Reach</span></a>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <a href="work.html"><span data-i18n="nav_work">Our Work</span> <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="work-legal-aid.html"><span data-i18n="nav_work_1">Legal Aid</span></a>
+            <a href="work-advocacy.html"><span data-i18n="nav_work_2">Advocacy</span></a>
+            <a href="work-community-support.html"><span data-i18n="nav_work_3">Community Support</span></a>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <a href="involved.html"><span data-i18n="nav_involved">Get Involved</span> <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="involved-volunteer.html"><span data-i18n="nav_involved_1">Volunteer</span></a>
+            <a href="involved-donate.html"><span data-i18n="nav_involved_2">Donate</span></a>
+            <a href="involved-partner.html"><span data-i18n="nav_involved_3">Partner With Us</span></a>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <a href="resources.html"><span data-i18n="nav_resources">Resources</span> <svg class="chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="resources-reports.html"><span data-i18n="nav_resources_1">Reports & Publications</span></a>
+            <a href="resources-legal-guide.html"><span data-i18n="nav_resources_2">Legal Rights Guide</span></a>
+            <a href="resources-news.html"><span data-i18n="nav_resources_3">News & Updates</span></a>
+          </div>
+        </li>
+        <li><a href="team.html"><span data-i18n="nav_team">Our Team</span></a></li>
+      </ul>
+      
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="hr">HR</button>
+        <button class="lang-btn" data-lang="ne">NE</button>
+      </div>
+      <div class="nav-actions">
+        <button class="nav-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </button>
+        <button class="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
 
 <header class="hero">
   <div class="hero-bg"></div>

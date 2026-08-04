@@ -99,6 +99,8 @@ const translations = {
     "who_mission_p": { hr: "Pružanje besplatne pravne pomoći i osiguranje pravednog tretmana nepalskih radnika u Hrvatskoj.", ne: "क्रोएसियामा नेपाली कामदारहरूको लागि निःशुल्क कानुनी सहायता र निष्पक्ष व्यवहार सुनिश्चित गर्न।", en: "To provide pro bono legal aid and ensure fair treatment for Nepali workers in Croatia." },
     "who_vision_title": { hr: "Naša vizija", ne: "हाम्रो दृष्टिकोण", en: "Our Vision" },
     "who_vision_p": { hr: "Budućnost u kojoj svaki radnik migrant može napredovati u sigurnom i pravno zaštićenom okruženju.", ne: "प्रत्येक आप्रवासी कामदारले सुरक्षित र कानुनी रूपमा सुरक्षित वातावरणमा फस्टाउन सक्ने भविष्य।", en: "A future where every migrant worker can thrive in a safe and legally protected environment." },
+
+    "top_contact": { hr: "Kontakt", ne: "सम्पर्क", en: "Contact Us" },
   };
 
   function setLanguage(lang) {
@@ -127,6 +129,24 @@ const translations = {
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         setLanguage(e.target.getAttribute('data-lang'));
+      });
+    });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    if(hamburger) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+    }
+    // Mobile dropdown toggle
+    document.querySelectorAll('.has-dropdown > a').forEach(el => {
+      el.addEventListener('click', (e) => {
+        if(window.innerWidth <= 900) {
+          e.preventDefault();
+          e.currentTarget.parentElement.classList.toggle('open');
+        }
       });
     });
   });
