@@ -656,10 +656,10 @@
     inset: 0;
     background-size: cover;
     background-position: center;
-    opacity: 0.25;
+    opacity: 0.18;
     z-index: 0;
     pointer-events: none;
-    mix-blend-mode: overlay;
+    mix-blend-mode: luminosity;
   }
   .page-banner .wrap {
     position: relative;

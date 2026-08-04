@@ -90,7 +90,15 @@ const translations = {
     "footer_contact": { hr: "Kontakt", ne: "सम्पर्क", en: "Contact" },
     "footer_loc": { hr: "Osijek, Hrvatska", ne: "ओसिजेक, क्रोएसिया", en: "Osijek, Croatia" },
     "footer_cr": { hr: "© 2026 Društvo prijateljstva Hrvatske i Nepala", ne: "© 2026 क्रोएसिया-नेपाल मैत्री सङ्घ", en: "© 2026 Croatia–Nepal Friendship Association" },
-    "footer_cr2": { hr: "Registrirana neprofitna organizacija · Osijek, Hrvatska", ne: "दर्ता गरिएको नाफामुखी संस्था · ओसिजेक, क्रोएसिया", en: "Registered Non-Profit · Osijek, Croatia" }
+    "footer_cr2": { hr: "Registrirana neprofitna organizacija · Osijek, Hrvatska", ne: "दर्ता गरिएको नाफामुखी संस्था · ओसिजेक, क्रोएसिया", en: "Registered Non-Profit · Osijek, Croatia" },
+
+    "who_story_title": { hr: "Naša priča", ne: "हाम्रो कथा", en: "Our Story" },
+    "who_story_p1": { hr: "Osnovana na uvjerenju da je sigurna migracija osnovno pravo, CRONEF premošćuje geografski i pravni jaz između Nepala i Hrvatske.", ne: "सुरक्षित आप्रवासन एक मौलिक अधिकार हो भन्ने विश्वासमा स्थापित, CRONEF ले नेपाल र क्रोएसिया बीचको भौगोलिक र कानुनी खाडललाई जोड्छ।", en: "Founded on the belief that safe migration is a fundamental right, CRONEF bridges the geographical and legal divide between Nepal and Croatia." },
+    "who_story_p2": { hr: "Mi smo predani tim pravnih stručnjaka, organizatora zajednice i prevoditelja koji razumiju obje strane putovanja. Radeći izravno s radnicima, poslodavcima i vlastima, eliminiramo izrabljivanje koje se često događa tijekom međunarodnog zapošljavanja.", ne: "हामी कानुनी विशेषज्ञहरू, सामुदायिक आयोजकहरू, र अनुवादकहरूको समर्पित टोली हौं जसले यात्राका दुवै पक्षहरू बुझ्छन्। कामदारहरू, रोजगारदाताहरू र अधिकारीहरूसँग प्रत्यक्ष रूपमा काम गरेर, हामी अन्तर्राष्ट्रिय भर्तीको समयमा अक्सर हुने शोषणलाई हटाउँछौं।", en: "We are a dedicated team of legal experts, community organizers, and translators who understand both sides of the journey. By working directly with workers, employers, and authorities, we eliminate the exploitation that often occurs during international recruitment." },
+    "who_mission_title": { hr: "Naša misija", ne: "हाम्रो मिसन", en: "Our Mission" },
+    "who_mission_p": { hr: "Pružanje besplatne pravne pomoći i osiguranje pravednog tretmana nepalskih radnika u Hrvatskoj.", ne: "क्रोएसियामा नेपाली कामदारहरूको लागि निःशुल्क कानुनी सहायता र निष्पक्ष व्यवहार सुनिश्चित गर्न।", en: "To provide pro bono legal aid and ensure fair treatment for Nepali workers in Croatia." },
+    "who_vision_title": { hr: "Naša vizija", ne: "हाम्रो दृष्टिकोण", en: "Our Vision" },
+    "who_vision_p": { hr: "Budućnost u kojoj svaki radnik migrant može napredovati u sigurnom i pravno zaštićenom okruženju.", ne: "प्रत्येक आप्रवासी कामदारले सुरक्षित र कानुनी रूपमा सुरक्षित वातावरणमा फस्टाउन सक्ने भविष्य।", en: "A future where every migrant worker can thrive in a safe and legally protected environment." },
   };
 
   function setLanguage(lang) {
