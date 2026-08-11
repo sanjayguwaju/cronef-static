@@ -216,10 +216,21 @@ const translations = {
   document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-    if(hamburger) {
-      hamburger.addEventListener('click', () => {
+    if(hamburger && navLinks) {
+      // Inject close cross into drawer
+      const closeDrawer = document.createElement('button');
+      closeDrawer.className = 'drawer-close';
+      closeDrawer.setAttribute('aria-label', 'Close menu');
+      closeDrawer.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"></path></svg>';
+      navLinks.insertBefore(closeDrawer, navLinks.firstChild);
+
+      const toggleMenu = () => {
         navLinks.classList.toggle('open');
-      });
+        hamburger.classList.toggle('open');
+      };
+
+      hamburger.addEventListener('click', toggleMenu);
+      closeDrawer.addEventListener('click', toggleMenu);
     }
     // Mobile dropdown toggle
     document.querySelectorAll('.has-dropdown > a').forEach(el => {
