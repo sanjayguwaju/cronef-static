@@ -107,6 +107,9 @@
     padding:0;
     flex-grow:1;
   }
+  .drawer-close {
+    display: none;
+  }
   .nav-links > li{
     display:flex;
     position: relative;
