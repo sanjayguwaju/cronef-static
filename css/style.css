@@ -746,6 +746,7 @@
   }
   .nav-links > li {
     width: 100%;
+    flex-direction: column;
   }
   .nav-links > li > a {
     padding: 16px 24px;
@@ -761,8 +762,5 @@
   }
   .has-dropdown:hover .dropdown-menu {
     display: none; /* Disable hover on mobile */
-  }
-  .has-dropdown.open .dropdown-menu {
-    display: flex; /* Toggle via JS */
   }
 }
