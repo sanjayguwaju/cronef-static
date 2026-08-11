@@ -125,18 +125,26 @@
 
     <!-- Volunteer Team Section -->
     <div style="max-width: 800px; margin: 80px auto 0; text-align: center;">
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="2" style="margin-bottom: 20px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <div style="width: 64px; height: 64px; background: rgba(0,74,173,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px auto; color: var(--nav-hover);">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
       <h2 style="margin-bottom: 20px;"><span data-i18n="p_vol_h2">Join Our Volunteer Team</span></h2>
-      <p class="lede" style="margin-bottom: 30px;" data-i18n="p_vol_p1">Are you a lawyer, translator, or passionate community member? We need your skills to protect vulnerable workers.</p>
-      <div style="background: var(--paper-2); padding: 40px; border-radius: 12px; border: 1px solid var(--line-paper); text-align: left;">
-        <h3 style="margin-bottom: 16px;" data-i18n="p_vol_roles">Current Roles Needed:</h3>
-        <ul style="margin-bottom: 24px; padding-left: 20px; line-height: 1.8;">
+      <p class="lede" style="margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;" data-i18n="p_vol_p1">Are you a lawyer, translator, or passionate community member? We need your skills to protect vulnerable workers.</p>
+      
+      <div class="reveal" style="background: var(--paper-2); padding: 40px; border-radius: 12px; border: 1px solid var(--line-paper); box-shadow: 0 12px 32px rgba(0,0,0,0.05); text-align: left; max-width: 600px; margin: 0 auto;">
+        <h3 style="margin-bottom: 16px; font-size: 20px;" data-i18n="p_vol_roles">Current Roles Needed:</h3>
+        <ul style="margin-bottom: 24px; padding-left: 20px; line-height: 1.8; color: var(--ink);">
           <li data-i18n="p_vol_l1">Pro Bono Legal Advisors (Croatian Law)</li>
           <li data-i18n="p_vol_l2">Nepali/Croatian Translators</li>
           <li data-i18n="p_vol_l3">Community Outreach Coordinators in Osijek</li>
         </ul>
-        <p style="margin-bottom: 24px;" data-i18n="p_vol_contact">To apply, please email us your resume and a brief introduction.</p>
-        <a href="mailto:volunteer@cronef.hr" class="btn btn-primary" style="text-transform: uppercase;">volunteer@cronef.hr</a>
+        <div style="border-top: 1px solid var(--line-paper); margin: 24px 0; padding-top: 24px;">
+          <p style="margin-bottom: 16px; color: var(--ink-soft);" data-i18n="p_vol_contact">To apply, please email us your resume and a brief introduction.</p>
+          <a href="mailto:volunteer@cronef.hr" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            volunteer@cronef.hr
+          </a>
+        </div>
       </div>
     </div>
 

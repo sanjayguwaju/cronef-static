@@ -235,19 +235,19 @@ const translations = {
     const searchIndexData = [
       {
         title: "News & Updates: CRONEF wins landmark wage theft case in Osijek",
-        url: "resources-news.html",
+        url: "news-wage-theft.html",
         excerpt: "Our legal team successfully secured back pay for 12 construction workers whose contracts were unlawfully altered.",
         category: "News"
       },
       {
         title: "News & Updates: New Kathmandu Pre-Departure Center Opens",
-        url: "resources-news.html",
+        url: "news-kathmandu-center.html",
         excerpt: "We have officially opened a new facility in Kathmandu to provide in-person orientation to prospective migrants.",
         category: "News"
       },
       {
         title: "News & Updates: Cultural Integration Festival a Huge Success",
-        url: "resources-news.html",
+        url: "news-cultural-festival.html",
         excerpt: "Over 500 locals and Nepali expats joined our annual cultural exchange festival celebrating food and music.",
         category: "Events"
       },
