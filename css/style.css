@@ -776,3 +776,115 @@
     display: flex; /* Override desktop hover display block/flex when max-height is 0 */
   }
 }
+
+/* ---------- SEARCH MODAL ---------- */
+.search-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 25, 48, 0.95);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.search-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-close svg {
+  width: 32px;
+  height: 32px;
+}
+
+.search-container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.search-input-wrapper {
+  position: relative;
+}
+
+.search-input-wrapper svg {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  color: var(--paper-soft);
+}
+
+#search-input {
+  width: 100%;
+  padding: 20px 20px 20px 60px;
+  font-size: 24px;
+  border: none;
+  border-radius: var(--radius-m);
+  background: var(--paper);
+  color: var(--ink);
+  outline: none;
+}
+
+#search-results {
+  margin-top: 30px;
+  max-height: 60vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.search-result-item {
+  background: var(--paper);
+  padding: 20px;
+  border-radius: var(--radius-m);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-result-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.search-result-category {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.search-result-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.search-result-excerpt {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin: 0;
+}

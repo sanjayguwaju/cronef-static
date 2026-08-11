@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CRONEF — Croatia–Nepal Friendship Association</title>
+<title>Contact Us — CRONEF</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -79,57 +79,64 @@
 </header>
 
 <header class="page-banner">
-  <div class="page-banner-bg" style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');"></div>
+  <div class="page-banner-bg" style="background-image: url('https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');"></div>
   <div class="wrap">
-    <h1><span data-i18n="nav_about_1">Who We Are</span></h1>
+    <h1><span data-i18n="top_contact">Contact Us</span></h1>
   </div>
 </header>
-<section class="page-content" style="padding-bottom: 120px;">
-  <!-- Our Story Section -->
-  <div class="wrap about-grid" style="align-items: center; margin-bottom: 100px;">
-    <div class="about-copy reveal">
-      <p class="eyebrow" data-i18n="who_story_title">Our Story</p>
-      <h2 style="margin-bottom: 24px; font-size: clamp(32px, 4vw, 48px); line-height: 1.1;"><span data-i18n="nav_about_1">Who We Are</span></h2>
-      <p class="lede" style="color: var(--ink-soft); font-size: 18px; margin-bottom: 20px;" data-i18n="who_story_p1">Founded on the belief that safe migration is a fundamental right, CRONEF bridges the geographical and legal divide between Nepal and Croatia.</p>
-      <p style="color: var(--ink-soft); font-size: 16px; line-height: 1.7;" data-i18n="who_story_p2">We are a dedicated team of legal experts, community organizers, and translators who understand both sides of the journey. By working directly with workers, employers, and authorities, we eliminate the exploitation that often occurs during international recruitment.</p>
-    </div>
-    <div class="about-card reveal" style="position: relative; padding: 0; border-radius: var(--radius-l); overflow: hidden; box-shadow: 0 24px 48px rgba(0,0,0,0.12);">
-      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Legal Consultation" style="width: 100%; height: 100%; object-fit: cover; min-height: 400px; display: block;">
-      <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 30px; background: linear-gradient(to top, rgba(10,25,48,0.9), transparent);">
-        <p style="color: #fff; font-family: 'IBM Plex Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; margin: 0;">Bridging Borders &bull; Building Trust</p>
-      </div>
-    </div>
-  </div>
 
-  <!-- Mission & Vision Section -->
+<section class="page-content" style="padding: 80px 0;">
   <div class="wrap">
-    <div class="about-grid-img reveal" style="gap: 60px;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
       
-      <!-- Mission -->
-      <div style="display: flex; flex-direction: column; gap: 24px;">
-        <div style="border-radius: var(--radius-m); overflow: hidden; height: 260px; box-shadow: 0 12px 24px rgba(0,0,0,0.08);">
-          <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Our Mission" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div style="background: var(--paper-2); padding: 40px; border-radius: var(--radius-m); border: 1px solid var(--line-paper); flex-grow: 1;">
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            <p class="eyebrow" style="margin: 0; color: var(--crimson);" data-i18n="who_mission_title">Our Mission</p>
+      <div class="reveal">
+        <h2 style="margin-bottom: 24px; font-size: 32px;" data-i18n="contact_h2">Get in Touch</h2>
+        <p style="color: var(--ink-soft); margin-bottom: 40px;" data-i18n="contact_desc">If you have any questions, require legal aid, or want to partner with us, please fill out the form below. Our team will get back to you as soon as possible.</p>
+        
+        <form style="display: flex; flex-direction: column; gap: 20px;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label for="name" style="font-weight: 500; font-size: 14px;" data-i18n="contact_label_name">Full Name</label>
+            <input type="text" id="name" name="name" style="padding: 12px 16px; border: 1px solid var(--line-dark); border-radius: 8px; font-family: inherit; font-size: 15px;" required>
           </div>
-          <p style="font-size: 18px; font-weight: 500; color: var(--ink); line-height: 1.6; margin: 0;" data-i18n="who_mission_p">To provide pro bono legal aid and ensure fair treatment for Nepali workers in Croatia.</p>
-        </div>
+          
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label for="email" style="font-weight: 500; font-size: 14px;" data-i18n="contact_label_email">Email Address</label>
+            <input type="email" id="email" name="email" style="padding: 12px 16px; border: 1px solid var(--line-dark); border-radius: 8px; font-family: inherit; font-size: 15px;" required>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label for="subject" style="font-weight: 500; font-size: 14px;" data-i18n="contact_label_subject">Subject</label>
+            <input type="text" id="subject" name="subject" style="padding: 12px 16px; border: 1px solid var(--line-dark); border-radius: 8px; font-family: inherit; font-size: 15px;" required>
+          </div>
+          
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label for="message" style="font-weight: 500; font-size: 14px;" data-i18n="contact_label_message">Message</label>
+            <textarea id="message" name="message" rows="5" style="padding: 12px 16px; border: 1px solid var(--line-dark); border-radius: 8px; font-family: inherit; font-size: 15px; resize: vertical;" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="align-self: flex-start; margin-top: 10px; border: none; cursor: pointer; font-size: 14px;" data-i18n="contact_btn_send">Send Message</button>
+        </form>
       </div>
 
-      <!-- Vision -->
-      <div style="display: flex; flex-direction: column; gap: 24px;">
-        <div style="border-radius: var(--radius-m); overflow: hidden; height: 260px; box-shadow: 0 12px 24px rgba(0,0,0,0.08);">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Our Vision" style="width: 100%; height: 100%; object-fit: cover;">
+      <div class="reveal" style="background: var(--paper-2); padding: 40px; border-radius: var(--radius-m); border: 1px solid var(--line-paper); display: flex; flex-direction: column; gap: 30px;">
+        <div>
+          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="footer_loc">Osijek, Croatia</h3>
+          <p style="color: var(--ink-soft); font-size: 15px;">CRONEF Headquarters<br>Street Name 123, 31000 Osijek<br>Croatia</p>
         </div>
-        <div style="background: var(--paper-2); padding: 40px; border-radius: var(--radius-m); border: 1px solid var(--line-paper); flex-grow: 1;">
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-            <p class="eyebrow" style="margin: 0; color: var(--gold);" data-i18n="who_vision_title">Our Vision</p>
-          </div>
-          <p style="font-size: 18px; font-weight: 500; color: var(--ink); line-height: 1.6; margin: 0;" data-i18n="who_vision_p">A future where every migrant worker can thrive in a safe and legally protected environment.</p>
+        
+        <div>
+          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="contact_info_email">Email</h3>
+          <p style="color: var(--ink-soft); font-size: 15px;">info@cronef.hr</p>
+        </div>
+        
+        <div>
+          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="contact_info_phone">Phone</h3>
+          <p style="color: var(--ink-soft); font-size: 15px;">+385 XX XXX XXXX</p>
+        </div>
+
+        <div>
+          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="contact_info_hours">Working Hours</h3>
+          <p style="color: var(--ink-soft); font-size: 15px;" data-i18n="contact_hours_val">Monday - Friday: 9:00 AM - 5:00 PM</p>
         </div>
       </div>
 
@@ -149,25 +156,25 @@
       <div>
         <h5 data-i18n="footer_org">Organisation</h5>
         <ul>
-          <li><a href="#mandate" data-i18n="footer_mandate">Our mandate</a></li>
-          <li><a href="#about" data-i18n="footer_about">About us</a></li>
-          <li><a href="#" data-i18n="footer_reports">Annual reports</a></li>
+          <li><a href="about-who-we-are.html#mandate" data-i18n="footer_mandate">Our mandate</a></li>
+          <li><a href="about.html" data-i18n="footer_about">About us</a></li>
+          <li><a href="resources-reports.html" data-i18n="footer_reports">Annual reports</a></li>
         </ul>
       </div>
       <div>
         <h5 data-i18n="footer_support">Support</h5>
         <ul>
-          <li><a href="#process" data-i18n="footer_process">Legal aid process</a></li>
-          <li><a href="#contact" data-i18n="footer_help">Request help</a></li>
-          <li><a href="#" data-i18n="footer_rights">Know your rights</a></li>
+          <li><a href="work-legal-aid.html#process" data-i18n="footer_process">Legal aid process</a></li>
+          <li><a href="contact.html" data-i18n="footer_help">Request help</a></li>
+          <li><a href="resources-legal-guide.html" data-i18n="footer_rights">Know your rights</a></li>
         </ul>
       </div>
       <div>
         <h5 data-i18n="footer_contact">Contact</h5>
         <ul>
-          <li><a href="#" data-i18n="footer_loc">Osijek, Croatia</a></li>
-          <li><a href="#">info@cronef.hr</a></li>
-          <li><a href="#">+385 XX XXX XXXX</a></li>
+          <li><a href="contact.html" data-i18n="footer_loc">Osijek, Croatia</a></li>
+          <li><a href="mailto:info@cronef.hr">info@cronef.hr</a></li>
+          <li><a href="tel:+3850000000">+385 XX XXX XXXX</a></li>
         </ul>
       </div>
     </div>
@@ -179,8 +186,6 @@
 </footer>
 
 <script src="js/i18n.js"></script>
-
-
 <script src="js/main.js"></script>
 </body>
 </html>
