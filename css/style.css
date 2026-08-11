@@ -631,18 +631,18 @@
   }
   
   .about-grid-img {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
     margin-bottom: 40px;
   }
   .about-img {
-    width: 100%;
+    flex: 1 1 calc(50% - 12px);
     height: 400px;
+    min-width: 280px;
     object-fit: cover;
     border-radius: var(--radius-m);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
   }
   
   .page-banner {
