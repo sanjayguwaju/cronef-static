@@ -226,39 +226,7 @@ const translations = {
       el.addEventListener('click', (e) => {
         if(window.innerWidth <= 900) {
           e.preventDefault();
-          const parent = e.currentTarget.parentElement;
-          const menu = parent.querySelector('.dropdown-menu');
-          
-          if(!parent.classList.contains('open')) {
-            parent.classList.add('open');
-            menu.style.display = 'flex';
-            const height = menu.scrollHeight;
-            menu.style.height = '0px';
-            menu.style.overflow = 'hidden';
-            menu.style.transition = 'height 0.3s ease';
-            
-            menu.offsetHeight; // trigger reflow
-            
-            menu.style.height = height + 'px';
-            setTimeout(() => {
-              menu.style.height = 'auto';
-              menu.style.overflow = '';
-            }, 300);
-          } else {
-            const height = menu.scrollHeight;
-            menu.style.height = height + 'px';
-            menu.style.overflow = 'hidden';
-            
-            menu.offsetHeight; // trigger reflow
-            
-            menu.style.height = '0px';
-            setTimeout(() => {
-              parent.classList.remove('open');
-              menu.style.display = 'none';
-              menu.style.height = '';
-              menu.style.overflow = '';
-            }, 300);
-          }
+          e.currentTarget.parentElement.classList.toggle('open');
         }
       });
     });

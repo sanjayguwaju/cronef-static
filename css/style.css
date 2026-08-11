@@ -758,9 +758,21 @@
     background: rgba(0,0,0,0.1);
     width: 100%;
     box-shadow: none;
-    display: none;
+    display: flex;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, padding 0.4s ease, opacity 0.4s ease;
+  }
+  .has-dropdown.open .dropdown-menu {
+    max-height: 300px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    opacity: 1;
   }
   .has-dropdown:hover .dropdown-menu {
-    display: none; /* Disable hover on mobile */
+    display: flex; /* Override desktop hover display block/flex when max-height is 0 */
   }
 }
