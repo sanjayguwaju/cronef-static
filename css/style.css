@@ -607,6 +607,10 @@
     .about-grid, .about-grid-img {grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:1fr 1fr;}
     .lang-switcher{margin-left:auto;}
+    .search-modal {padding: 70px 16px 20px;}
+    .search-close {top: 16px; right: 16px;}
+    #search-input {font-size: 16px; padding: 16px 16px 16px 48px;}
+    .search-input-wrapper svg {left: 16px;}
   }
   @media (max-width:560px){
     .wrap{padding:0 20px;}
@@ -616,10 +620,6 @@
     .quote-mark{display:none;}
     .footer-base{flex-direction:column;}
     .about-img {height:260px;}
-    .search-modal {padding: 70px 16px 20px;}
-    .search-close {top: 16px; right: 16px;}
-    #search-input {font-size: 16px; padding: 16px 16px 16px 48px;}
-    .search-input-wrapper svg {left: 16px;}
   }
   /* ---------- IMAGES ---------- */
   .hero-bg {
