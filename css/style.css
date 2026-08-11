@@ -607,9 +607,9 @@
     .about-grid, .about-grid-img {grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:1fr 1fr;}
     .lang-switcher{margin-left:auto;}
-    .search-modal {padding: 70px 16px 20px;}
-    .search-close {top: 16px; right: 16px;}
-    #search-input {font-size: 16px; padding: 16px 16px 16px 48px;}
+    .search-modal {padding: 80px 16px 20px;}
+    .search-close {top: 20px; right: 20px;}
+    #search-input {font-size: 16px; padding: 16px 16px 16px 48px; box-sizing: border-box;}
     .search-input-wrapper svg {left: 16px;}
   }
   @media (max-width:560px){
@@ -808,7 +808,8 @@
   z-index: 9999;
   display: flex;
   flex-direction: column;
-  padding: 80px 20px;
+  padding: 100px 20px;
+  box-sizing: border-box;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -822,7 +823,7 @@
 .search-close {
   position: absolute;
   top: 30px;
-  right: 40px;
+  right: 30px;
   background: transparent;
   border: none;
   color: #fff;
@@ -855,6 +856,7 @@
 }
 
 #search-input {
+  box-sizing: border-box;
   width: 100%;
   padding: 20px 20px 20px 60px;
   font-size: 24px;
