@@ -606,7 +606,7 @@
     .steps{grid-template-columns:1fr 1fr;row-gap:34px;}
     .about-grid{grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:1fr 1fr;}
-    .nav-links{display:none;}
+    .lang-switcher{margin-left:auto;}
   }
   @media (max-width:560px){
     .wrap{padding:0 20px;}
