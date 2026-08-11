@@ -604,7 +604,7 @@
     .seal{width:220px;}
     .articles{grid-template-columns:1fr;}
     .steps{grid-template-columns:1fr 1fr;row-gap:34px;}
-    .about-grid{grid-template-columns:1fr;}
+    .about-grid, .about-grid-img {grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:1fr 1fr;}
     .lang-switcher{margin-left:auto;}
   }
@@ -615,6 +615,7 @@
     .trust-row{gap:20px;}
     .quote-mark{display:none;}
     .footer-base{flex-direction:column;}
+    .about-img {height:260px;}
   }
   /* ---------- IMAGES ---------- */
   .hero-bg {
