@@ -67,7 +67,7 @@ const searchIndex = [
   },
   {
     title: "Contact Us",
-    url: "contact.html",
+    url: "contact-us.html",
     excerpt: "If you have any questions, require legal aid, or want to partner with us, please contact us.",
     category: "Contact"
   }
