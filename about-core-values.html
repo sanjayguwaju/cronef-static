@@ -86,33 +86,69 @@
 </header>
 <section class="page-content" style="padding: 80px 0;">
   <div class="wrap">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+    <style>
+      .value-card {
+        background: white;
+        padding: 48px 40px;
+        border-radius: 16px;
+        border: 1px solid var(--line-paper);
+        height: 100%;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+        position: relative;
+        overflow: hidden;
+      }
+      .value-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+        border-color: rgba(0,74,173,0.15);
+      }
+      .value-icon-box {
+        width: 64px;
+        height: 64px;
+        background: linear-gradient(135deg, var(--nav-hover), #003377);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 32px;
+        color: white;
+        box-shadow: 0 8px 20px rgba(0,74,173,0.25);
+        transform: rotate(-3deg);
+        transition: transform 0.3s ease;
+      }
+      .value-card:hover .value-icon-box {
+        transform: rotate(0deg) scale(1.05);
+      }
+    </style>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px;">
       
       <!-- Value 1 -->
-      <div class="reveal" style="background: var(--paper-2); padding: 40px; border-radius: 12px; border: 1px solid var(--line-paper); height: 100%;">
-        <div style="width: 48px; height: 48px; background: rgba(0,74,173,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--nav-hover);">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div class="reveal value-card">
+        <div class="value-icon-box">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <h3 style="margin-bottom: 16px; font-size: 24px;" data-i18n="cv_1_title">Integrity & Transparency</h3>
-        <p style="color: var(--ink); line-height: 1.6;" data-i18n="cv_1_desc">We operate with complete honesty and transparency, ensuring trust between workers, employers, and authorities.</p>
+        <h3 style="margin-bottom: 16px; font-size: 26px; font-weight: 600; color: var(--ink-dark);" data-i18n="cv_1_title">Integrity & Transparency</h3>
+        <p style="color: var(--ink-light); line-height: 1.7; font-size: 16px;" data-i18n="cv_1_desc">We operate with complete honesty and transparency, ensuring trust between workers, employers, and authorities.</p>
       </div>
 
       <!-- Value 2 -->
-      <div class="reveal" style="background: var(--paper-2); padding: 40px; border-radius: 12px; border: 1px solid var(--line-paper); height: 100%;">
-        <div style="width: 48px; height: 48px; background: rgba(0,74,173,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--nav-hover);">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+      <div class="reveal value-card">
+        <div class="value-icon-box" style="background: linear-gradient(135deg, var(--crimson), #991421); box-shadow: 0 8px 20px rgba(184,28,49,0.25);">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
         </div>
-        <h3 style="margin-bottom: 16px; font-size: 24px;" data-i18n="cv_2_title">Equity & Justice</h3>
-        <p style="color: var(--ink); line-height: 1.6;" data-i18n="cv_2_desc">We believe every worker deserves fair treatment, equal protection under the law, and freedom from exploitation.</p>
+        <h3 style="margin-bottom: 16px; font-size: 26px; font-weight: 600; color: var(--ink-dark);" data-i18n="cv_2_title">Equity & Justice</h3>
+        <p style="color: var(--ink-light); line-height: 1.7; font-size: 16px;" data-i18n="cv_2_desc">We believe every worker deserves fair treatment, equal protection under the law, and freedom from exploitation.</p>
       </div>
 
       <!-- Value 3 -->
-      <div class="reveal" style="background: var(--paper-2); padding: 40px; border-radius: 12px; border: 1px solid var(--line-paper); height: 100%;">
-        <div style="width: 48px; height: 48px; background: rgba(0,74,173,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--nav-hover);">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <div class="reveal value-card">
+        <div class="value-icon-box" style="background: linear-gradient(135deg, var(--gold), #b38f00); box-shadow: 0 8px 20px rgba(230,184,0,0.25);">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
-        <h3 style="margin-bottom: 16px; font-size: 24px;" data-i18n="cv_3_title">Empowerment</h3>
-        <p style="color: var(--ink); line-height: 1.6;" data-i18n="cv_3_desc">We provide workers with the knowledge, resources, and community support they need to confidently navigate their new environment.</p>
+        <h3 style="margin-bottom: 16px; font-size: 26px; font-weight: 600; color: var(--ink-dark);" data-i18n="cv_3_title">Empowerment</h3>
+        <p style="color: var(--ink-light); line-height: 1.7; font-size: 16px;" data-i18n="cv_3_desc">We provide workers with the knowledge, resources, and community support they need to confidently navigate their new environment.</p>
       </div>
 
     </div>
