@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us — CRONEF</title>
+<title>Gallery — CRONEF</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -80,66 +80,48 @@
 </header>
 
 <header class="page-banner">
-  <div class="page-banner-bg" style="background-image: url('https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');"></div>
-  <div class="wrap">
-    <h1><span data-i18n="top_contact">Contact Us</span></h1>
+  <div class="page-banner-bg" style="background-image: url('imgs/gallery_festival.jpg'); background-position: center 30%;"></div>
+  <div class="wrap" style="position: relative; z-index: 2;">
+    <h1 style="color: #fff; font-size: 56px; font-weight: 700; text-shadow: 0 4px 20px rgba(0,0,0,0.4);" data-i18n="page_gallery">Media Gallery</h1>
   </div>
 </header>
 
-<section class="page-content" style="padding: 80px 0;">
+<section class="page-content" style="padding: 80px 0; background: var(--paper);">
   <div class="wrap">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
-      
-      <div class="reveal">
-        <h2 style="margin-bottom: 24px; font-size: 32px;" data-i18n="contact_h2">Get in Touch</h2>
-        <p style="color: var(--ink-soft); margin-bottom: 40px;" data-i18n="contact_desc">If you have any questions, require legal aid, or want to partner with us, please fill out the form below. Our team will get back to you as soon as possible.</p>
-        
-        <form style="display: flex; flex-direction: column; gap: 20px;">
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <label for="name" style="font-weight: 500; font-size: 14px;" data-i18n="contact_label_name">Full Name</label>
-            <input type="text" id="name" name="name" style="padding: 12px 16px; border: 1px solid var(--line-dark); border-radius: 8px; font-family: inherit; font-size: 15px;" required>
-          </div>
-          
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <label for="email" style="font-weight: 500; font-size: 14px;" data-i18n="contact_label_email">Email Address</label>
-            <input type="email" id="email" name="email" style="padding: 12px 16px; border: 1px solid var(--line-dark); border-radius: 8px; font-family: inherit; font-size: 15px;" required>
-          </div>
+    <div style="text-align: center; max-width: 800px; margin: 0 auto 60px;" class="reveal">
+      <h2 style="font-size: 36px; margin-bottom: 24px; color: var(--ink);" data-i18n="gallery_h2">Moments of Connection</h2>
+      <p style="font-size: 18px; color: var(--ink-soft); line-height: 1.6;" data-i18n="gallery_desc">Explore photos and videos from our cultural festivals, community workshops, and advocacy events across Croatia.</p>
+    </div>
 
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <label for="subject" style="font-weight: 500; font-size: 14px;" data-i18n="contact_label_subject">Subject</label>
-            <input type="text" id="subject" name="subject" style="padding: 12px 16px; border: 1px solid var(--line-dark); border-radius: 8px; font-family: inherit; font-size: 15px;" required>
-          </div>
-          
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <label for="message" style="font-weight: 500; font-size: 14px;" data-i18n="contact_label_message">Message</label>
-            <textarea id="message" name="message" rows="5" style="padding: 12px 16px; border: 1px solid var(--line-dark); border-radius: 8px; font-family: inherit; font-size: 15px; resize: vertical;" required></textarea>
-          </div>
-          
-          <button type="submit" class="btn btn-primary" style="align-self: flex-start; margin-top: 10px; border: none; cursor: pointer; font-size: 14px;" data-i18n="contact_btn_send">Send Message</button>
-        </form>
+    <div class="gallery-grid reveal" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; align-items: start;">
+      
+      <div class="gallery-item" style="border-radius: var(--radius-m); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
+        <img src="imgs/gallery_festival.jpg" alt="Nepalese Cultural Festival in Croatia" style="width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 16/9;">
+        <div style="padding: 16px; background: #fff;">
+          <h4 style="margin-bottom: 8px; font-size: 16px;" data-i18n="gallery_img1_title">Dubrovnik Cultural Festival</h4>
+          <p style="font-size: 14px; color: var(--ink-soft); margin: 0;" data-i18n="gallery_img1_desc">Celebrating Nepali heritage and music in the heart of Croatia.</p>
+        </div>
       </div>
 
-      <div class="reveal" style="background: var(--paper-2); padding: 40px; border-radius: var(--radius-m); border: 1px solid var(--line-paper); display: flex; flex-direction: column; gap: 30px;">
-        <div>
-          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="footer_loc">Osijek, Croatia</h3>
-          <p style="color: var(--ink-soft); font-size: 15px;">CRONEF Headquarters<br>Street Name 123, 31000 Osijek<br>Croatia</p>
+      <div class="gallery-item" style="border-radius: var(--radius-m); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
+        <img src="imgs/gallery_workshop.jpg" alt="Community Language Workshop" style="width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 16/9;">
+        <div style="padding: 16px; background: #fff;">
+          <h4 style="margin-bottom: 8px; font-size: 16px;" data-i18n="gallery_img2_title">Language Workshop</h4>
+          <p style="font-size: 14px; color: var(--ink-soft); margin: 0;" data-i18n="gallery_img2_desc">Migrant workers and Croatian volunteers learning together.</p>
         </div>
-        
-        <div>
-          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="contact_info_email">Email</h3>
-          <p style="color: var(--ink-soft); font-size: 15px;">info@cronef.hr</p>
-        </div>
-        
-        <div>
-          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="contact_info_hours">Working Hours</h3>
-          <p style="color: var(--ink-soft); font-size: 15px;" data-i18n="contact_hours_val">Monday - Friday: 9:00 AM - 5:00 PM</p>
+      </div>
+
+      <div class="gallery-item" style="border-radius: var(--radius-m); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
+        <img src="imgs/involved_banner.jpg" alt="Community Meetup" style="width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 16/9;">
+        <div style="padding: 16px; background: #fff;">
+          <h4 style="margin-bottom: 8px; font-size: 16px;" data-i18n="gallery_img3_title">Community Meetup</h4>
+          <p style="font-size: 14px; color: var(--ink-soft); margin: 0;" data-i18n="gallery_img3_desc">Building friendships and support networks.</p>
         </div>
       </div>
 
     </div>
   </div>
 </section>
-
 <footer>
   <div class="wrap">
     <div class="footer-grid">

@@ -18,6 +18,17 @@ const translations = {
     "nav_resources_1": { hr: "Izvješća i publikacije", ne: "रिपोर्टहरू र प्रकाशनहरू", en: "Reports & Publications" },
     "nav_resources_2": { hr: "Vodič za zakonska prava", ne: "कानूनी अधिकार गाइड", en: "Legal Rights Guide" },
     "nav_resources_3": { hr: "Novosti i ažuriranja", ne: "समाचार र अद्यावधिकहरू", en: "News & Updates" },
+    "nav_resources_4": { hr: "Medijska galerija", ne: "मिडिया ग्यालेरी", en: "Media Gallery" },
+    "page_gallery": { hr: "Galerija", ne: "ग्यालेरी", en: "Gallery" },
+    "gallery_h2": { hr: "Trenuci povezanosti", ne: "जडानका पलहरू", en: "Moments of Connection" },
+    "gallery_desc": { hr: "Istražite fotografije s naših kulturnih festivala i radionica.", ne: "हाम्रा सांस्कृतिक चाडपर्वहरू र कार्यशालाहरूबाट तस्बिरहरू अन्वेषण गर्नुहोस्।", en: "Explore photos and videos from our cultural festivals, community workshops, and advocacy events across Croatia." },
+    "gallery_img1_title": { hr: "Kulturni festival u Dubrovniku", ne: "डुब्रोभनिक सांस्कृतिक महोत्सव", en: "Dubrovnik Cultural Festival" },
+    "gallery_img1_desc": { hr: "Slavljenje nepalske baštine u srcu Hrvatske.", ne: "क्रोएसियाको मुटुमा नेपाली सम्पदा मनाउँदै।", en: "Celebrating Nepali heritage and music in the heart of Croatia." },
+    "gallery_img2_title": { hr: "Jezična radionica", ne: "भाषा कार्यशाला", en: "Language Workshop" },
+    "gallery_img2_desc": { hr: "Radnici migranti i hrvatski volonteri uče zajedno.", ne: "आप्रवासी कामदारहरू र क्रोएसियाली स्वयंसेवकहरू सँगै सिक्दै।", en: "Migrant workers and Croatian volunteers learning together." },
+    "gallery_img3_title": { hr: "Susret zajednice", ne: "सामुदायिक जमघट", en: "Community Meetup" },
+    "gallery_img3_desc": { hr: "Izgradnja prijateljstava i mreža podrške.", ne: "मित्रता र समर्थन सञ्जाल निर्माण।", en: "Building friendships and support networks." },
+
     "nav_team": { hr: "Naš tim", ne: "हाम्रो टोली", en: "Our Team" },
     
     "hero_eyebrow": { hr: "Registrirana udruga · Osijek, Hrvatska", ne: "दर्ता गरिएको संस्था · ओसिजेक, क्रोएसिया", en: "Registered NGO · Osijek, Croatia" },
