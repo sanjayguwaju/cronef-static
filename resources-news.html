@@ -88,9 +88,12 @@
 </header>
 <section class="page-content" style="padding: 80px 0;">
   <div class="wrap">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+    <!-- Swiper -->
+    <div class="swiper news-swiper reveal" style="padding-bottom: 40px;">
+      <div class="swiper-wrapper">
       
-      <div class="reveal" style="background: white; border-radius: 12px; border: 1px solid var(--line-paper); overflow: hidden;">
+      <div class="swiper-slide" style="height: auto;">
+        <div class="reveal" style="background: white; border-radius: 12px; border: 1px solid var(--line-paper); overflow: hidden; height: 100%; display: flex; flex-direction: column;">
         <a href="news-wage-theft.html" style="display: block; text-decoration: none;">
           <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="News" style="width: 100%; height: 200px; object-fit: cover;">
         </a>
@@ -102,9 +105,11 @@
           <p style="color: var(--ink-light); margin-bottom: 24px;" data-i18n="p_news_1_d">Our legal team successfully secured back pay for 12 construction workers whose contracts were unlawfully altered.</p>
           <a href="news-wage-theft.html" style="color: var(--nav-hover); font-weight: 500; text-decoration: none;" data-i18n="p_news_read">Read More →</a>
         </div>
+        </div>
       </div>
 
-      <div class="reveal" style="background: white; border-radius: 12px; border: 1px solid var(--line-paper); overflow: hidden;">
+      <div class="swiper-slide" style="height: auto;">
+        <div class="reveal" style="background: white; border-radius: 12px; border: 1px solid var(--line-paper); overflow: hidden; height: 100%; display: flex; flex-direction: column;">
         <a href="news-kathmandu-center.html" style="display: block; text-decoration: none;">
           <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="News" style="width: 100%; height: 200px; object-fit: cover;">
         </a>
@@ -116,9 +121,11 @@
           <p style="color: var(--ink-light); margin-bottom: 24px;" data-i18n="p_news_2_d">We have officially opened a new facility in Kathmandu to provide in-person orientation to prospective migrants.</p>
           <a href="news-kathmandu-center.html" style="color: var(--nav-hover); font-weight: 500; text-decoration: none;" data-i18n="p_news_read">Read More →</a>
         </div>
+        </div>
       </div>
 
-      <div class="reveal" style="background: white; border-radius: 12px; border: 1px solid var(--line-paper); overflow: hidden;">
+      <div class="swiper-slide" style="height: auto;">
+        <div class="reveal" style="background: white; border-radius: 12px; border: 1px solid var(--line-paper); overflow: hidden; height: 100%; display: flex; flex-direction: column;">
         <a href="news-cultural-festival.html" style="display: block; text-decoration: none;">
           <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="News" style="width: 100%; height: 200px; object-fit: cover;">
         </a>
@@ -130,8 +137,11 @@
           <p style="color: var(--ink-light); margin-bottom: 24px;" data-i18n="p_news_3_d">Over 500 locals and Nepali expats joined our annual cultural exchange festival celebrating food and music.</p>
           <a href="news-cultural-festival.html" style="color: var(--nav-hover); font-weight: 500; text-decoration: none;" data-i18n="p_news_read">Read More →</a>
         </div>
+        </div>
       </div>
 
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>

@@ -925,3 +925,23 @@
     gap: 30px !important;
   }
 }
+
+
+/* ---------- SWIPER OVERRIDES ---------- */
+.gallery-swiper .swiper-slide {
+  width: 280px;
+}
+@media (min-width: 768px) {
+  .gallery-swiper .swiper-slide {
+    width: 600px;
+  }
+}
+.swiper-pagination-bullet-active {
+  background: var(--nav-bg) !important;
+}
+.swiper-wrapper {
+  align-items: stretch;
+}
+.swiper-slide {
+  height: auto;
+}

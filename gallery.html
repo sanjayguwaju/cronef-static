@@ -94,32 +94,41 @@
       <p style="font-size: 18px; color: var(--ink-soft); line-height: 1.6;" data-i18n="gallery_desc">Explore photos and videos from our cultural festivals, community workshops, and advocacy events across Croatia.</p>
     </div>
 
-    <div class="gallery-grid reveal" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; align-items: start;">
+    <!-- Swiper -->
+    <div class="swiper gallery-swiper reveal" style="padding-bottom: 40px;">
+      <div class="swiper-wrapper">
       
-      <div class="gallery-item" style="border-radius: var(--radius-m); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
+        <div class="swiper-slide">
+          <div class="gallery-item" style="border-radius: var(--radius-m); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
         <img src="imgs/gallery_festival.jpg" alt="Nepalese Cultural Festival in Croatia" style="width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 16/9;">
         <div style="padding: 16px; background: #fff;">
           <h4 style="margin-bottom: 8px; font-size: 16px;" data-i18n="gallery_img1_title">Dubrovnik Cultural Festival</h4>
           <p style="font-size: 14px; color: var(--ink-soft); margin: 0;" data-i18n="gallery_img1_desc">Celebrating Nepali heritage and music in the heart of Croatia.</p>
         </div>
-      </div>
+          </div>
+        </div>
 
-      <div class="gallery-item" style="border-radius: var(--radius-m); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
+        <div class="swiper-slide">
+          <div class="gallery-item" style="border-radius: var(--radius-m); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
         <img src="imgs/gallery_workshop.jpg" alt="Community Language Workshop" style="width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 16/9;">
         <div style="padding: 16px; background: #fff;">
           <h4 style="margin-bottom: 8px; font-size: 16px;" data-i18n="gallery_img2_title">Language Workshop</h4>
           <p style="font-size: 14px; color: var(--ink-soft); margin: 0;" data-i18n="gallery_img2_desc">Migrant workers and Croatian volunteers learning together.</p>
         </div>
-      </div>
+          </div>
+        </div>
 
-      <div class="gallery-item" style="border-radius: var(--radius-m); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
+        <div class="swiper-slide">
+          <div class="gallery-item" style="border-radius: var(--radius-m); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform 0.3s ease;">
         <img src="imgs/involved_banner.jpg" alt="Community Meetup" style="width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 16/9;">
         <div style="padding: 16px; background: #fff;">
           <h4 style="margin-bottom: 8px; font-size: 16px;" data-i18n="gallery_img3_title">Community Meetup</h4>
           <p style="font-size: 14px; color: var(--ink-soft); margin: 0;" data-i18n="gallery_img3_desc">Building friendships and support networks.</p>
         </div>
+          </div>
+        </div>
       </div>
-
+      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>
