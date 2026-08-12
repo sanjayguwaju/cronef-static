@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CRONEF — Croatia–Nepal Friendship Association</title>
+<title>Get Involved — CRONEF</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -78,10 +78,44 @@
   </nav>
 </header>
 
-<section class="section" style="padding-top: 160px; min-height: 50vh;">
+<header class="page-banner">
+  <div class="page-banner-bg" style="background-image: url('imgs/involved_banner.jpg'); background-position: center 30%;"></div>
+  <div class="wrap" style="position: relative; z-index: 2;">
+    <h1 style="color: #fff; font-size: 56px; font-weight: 700; text-shadow: 0 4px 20px rgba(0,0,0,0.4);" data-i18n="page_involved">Get Involved</h1>
+  </div>
+</header>
+
+<section class="page-content" style="padding: 80px 0; background: var(--paper);">
   <div class="wrap">
-    <h1><span data-i18n="page_involved">Get Involved</span></h1>
-    <p>Content for Get Involved will go here.</p>
+    <div style="text-align: center; max-width: 800px; margin: 0 auto 60px;" class="reveal">
+      <h2 style="font-size: 36px; margin-bottom: 24px; color: var(--ink);" data-i18n="involved_h2">Join Our Mission</h2>
+      <p style="font-size: 18px; color: var(--ink-soft); line-height: 1.6;" data-i18n="involved_desc">Whether you want to lend a hand locally, support us financially, or partner on larger initiatives, your involvement helps us build a stronger, more supportive community for Nepalese workers in Croatia.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px;">
+      
+      <div class="about-card reveal">
+        <div class="eyebrow" data-i18n="involved_card1_eyebrow">Give Time</div>
+        <h3 data-i18n="involved_card1_h3">Volunteer</h3>
+        <p data-i18n="involved_card1_p">Join our team of dedicated volunteers. We are always looking for translators, legal assistants, and event organizers who share our vision of community support.</p>
+        <a href="involved-volunteer.html" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;" data-i18n="btn_learn_more">Learn More</a>
+      </div>
+
+      <div class="about-card reveal" style="border-top-color: var(--crimson);">
+        <div class="eyebrow" style="color: var(--crimson);" data-i18n="involved_card2_eyebrow">Give Support</div>
+        <h3 data-i18n="involved_card2_h3">Donate</h3>
+        <p data-i18n="involved_card2_p">Your financial contributions directly fund our pro bono legal aid, language classes, and emergency support funds for workers in need. Every little bit helps.</p>
+        <a href="involved-donate.html" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;" data-i18n="btn_learn_more">Learn More</a>
+      </div>
+
+      <div class="about-card reveal" style="border-top-color: var(--nav-bg);">
+        <div class="eyebrow" style="color: var(--nav-bg);" data-i18n="involved_card3_eyebrow">Give Strength</div>
+        <h3 data-i18n="involved_card3_h3">Partner With Us</h3>
+        <p data-i18n="involved_card3_p">We collaborate with local businesses, law firms, and other NGOs to amplify our impact. Let's work together to promote ethical recruitment and safe migration.</p>
+        <a href="involved-partner.html" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;" data-i18n="btn_learn_more">Learn More</a>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -97,25 +131,25 @@
       <div>
         <h5 data-i18n="footer_org">Organisation</h5>
         <ul>
-          <li><a href="#mandate" data-i18n="footer_mandate">Our mandate</a></li>
-          <li><a href="#about" data-i18n="footer_about">About us</a></li>
-          <li><a href="#" data-i18n="footer_reports">Annual reports</a></li>
+          <li><a href="about-who-we-are.html#mandate" data-i18n="footer_mandate">Our mandate</a></li>
+          <li><a href="about.html" data-i18n="footer_about">About us</a></li>
+          <li><a href="resources-reports.html" data-i18n="footer_reports">Annual reports</a></li>
         </ul>
       </div>
       <div>
         <h5 data-i18n="footer_support">Support</h5>
         <ul>
-          <li><a href="#process" data-i18n="footer_process">Legal aid process</a></li>
-          <li><a href="#contact" data-i18n="footer_help">Request help</a></li>
-          <li><a href="#" data-i18n="footer_rights">Know your rights</a></li>
+          <li><a href="work-legal-aid.html#process" data-i18n="footer_process">Legal aid process</a></li>
+          <li><a href="contact-us.html" data-i18n="footer_help">Request help</a></li>
+          <li><a href="resources-legal-guide.html" data-i18n="footer_rights">Know your rights</a></li>
         </ul>
       </div>
       <div>
         <h5 data-i18n="footer_contact">Contact</h5>
         <ul>
-          <li><a href="#" data-i18n="footer_loc">Osijek, Croatia</a></li>
-          <li><a href="#">info@cronef.hr</a></li>
-          <li><a href="#">+385 XX XXX XXXX</a></li>
+          <li><a href="contact-us.html" data-i18n="footer_loc">Osijek, Croatia</a></li>
+          <li><a href="mailto:info@cronef.hr">info@cronef.hr</a></li>
+          <li><a href="tel:+3850000000">+385 XX XXX XXXX</a></li>
         </ul>
       </div>
     </div>
@@ -127,8 +161,6 @@
 </footer>
 
 <script src="js/i18n.js"></script>
-
-
 <script src="js/main.js"></script>
 </body>
 </html>
