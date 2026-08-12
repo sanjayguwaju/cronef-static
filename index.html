@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -225,12 +226,46 @@
   </div>
 </section>
 
-<!-- QUOTE -->
-<section class="quote-section">
-  <div class="wrap" style="position:relative;">
-    <div class="quote-mark">"</div>
-    <blockquote class="reveal" data-i18n="quote_text">I didn't know who to ask when my contract changed after I arrived. CRONEF read it with me, in Nepali, and made the calls I couldn't make myself.</blockquote>
-    <p class="quote-attr reveal" data-i18n="quote_attr">— A construction worker, supported by CRONEF, Zagreb</p>
+<!-- TESTIMONIALS CAROUSEL -->
+<section class="section testimonials-section" style="background: var(--nav-bg); color: #fff; padding: 100px 0;">
+  <div class="wrap">
+    <div style="text-align: center; margin-bottom: 50px;" class="reveal">
+      <h2 style="font-size: 36px; color: #fff; margin-bottom:16px;" data-i18n="testi_title">Voices of Our Community</h2>
+      <p style="color: #a0aec0; font-size: 18px;" data-i18n="testi_desc">Hear from the people we serve and the partners we work with.</p>
+    </div>
+    
+    <!-- Swiper -->
+    <div class="swiper testimonials-swiper reveal">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide" style="height: auto;">
+          <div style="background: rgba(255,255,255,0.05); padding: 40px; border-radius: 12px; height: 100%; display: flex; flex-direction: column;">
+            <div style="font-size: 40px; color: var(--gold); margin-bottom: 20px; line-height: 1; font-family: 'IBM Plex Mono', monospace;">"</div>
+            <p style="font-size: 18px; line-height: 1.6; margin-bottom: 20px; flex-grow: 1;" data-i18n="quote_text">I didn't know who to ask when my contract changed after I arrived. CRONEF read it with me, in Nepali, and made the calls I couldn't make myself.</p>
+            <div style="font-weight: 600; color: var(--gold);" data-i18n="quote_attr">— Construction worker, Zagreb</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide" style="height: auto;">
+          <div style="background: rgba(255,255,255,0.05); padding: 40px; border-radius: 12px; height: 100%; display: flex; flex-direction: column;">
+            <div style="font-size: 40px; color: var(--gold); margin-bottom: 20px; line-height: 1; font-family: 'IBM Plex Mono', monospace;">"</div>
+            <p style="font-size: 18px; line-height: 1.6; margin-bottom: 20px; flex-grow: 1;" data-i18n="quote2_text">The language barriers were isolating. Through their community workshops, I not only learned basic Croatian but also met my closest friends.</p>
+            <div style="font-weight: 600; color: var(--gold);" data-i18n="quote2_attr">— Hospitality worker, Split</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide" style="height: auto;">
+          <div style="background: rgba(255,255,255,0.05); padding: 40px; border-radius: 12px; height: 100%; display: flex; flex-direction: column;">
+            <div style="font-size: 40px; color: var(--gold); margin-bottom: 20px; line-height: 1; font-family: 'IBM Plex Mono', monospace;">"</div>
+            <p style="font-size: 18px; line-height: 1.6; margin-bottom: 20px; flex-grow: 1;" data-i18n="quote3_text">Partnering with CRONEF ensures our supply chain respects human rights. Their pro bono legal team is professional and essential for a fair labor market.</p>
+            <div style="font-weight: 600; color: var(--gold);" data-i18n="quote3_attr">— Local Business Partner, Osijek</div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination" style="position: relative; margin-top: 40px;"></div>
+    </div>
   </div>
 </section>
 
@@ -371,6 +406,8 @@
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
 <script src="js/i18n.js"></script>
 
 

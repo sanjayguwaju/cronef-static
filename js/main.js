@@ -69,6 +69,13 @@ const translations = {
     
     "quote_text": { hr: "Nisam znao koga da pitam kada se moj ugovor promijenio nakon mog dolaska. CRONEF ga je pročitao sa mnom, na nepalskom, i obavio pozive koje ja nisam mogao sam.", ne: "म आइपुगेपछि मेरो सम्झौता परिवर्तन हुँदा कसलाई सोध्ने मलाई थाहा थिएन। क्रोनेफ (CRONEF) ले मसँग नेपालीमा पढ्यो र मैले आफैं गर्न नसक्ने कलहरू गर्यो।", en: "I didn't know who to ask when my contract changed after I arrived. CRONEF read it with me, in Nepali, and made the calls I couldn't make myself." },
     "quote_attr": { hr: "— Građevinski radnik, uz podršku CRONEF-a, Zagreb", ne: "— निर्माण मजदुर, क्रोनेफको सहयोगमा, जाग्रेब", en: "— A construction worker, supported by CRONEF, Zagreb" },
+    "testi_title": { hr: "Glasovi naše zajednice", ne: "हाम्रो समुदायको आवाज", en: "Voices of Our Community" },
+    "testi_desc": { hr: "Poslušajte ljude kojima služimo i partnere s kojima radimo.", ne: "हामीले सेवा गर्ने मानिसहरू र हामीले काम गर्ने साझेदारहरूबाट सुन्नुहोस्।", en: "Hear from the people we serve and the partners we work with." },
+    "quote2_text": { hr: "Jezične barijere bile su izolirajuće. Kroz njihove radionice naučio sam osnove hrvatskog jezika.", ne: "भाषा बाधाहरू एक्लो महसुस गराउने थिए। उनीहरूको कार्यशालाहरू मार्फत, मैले आधारभूत क्रोएसियाली मात्र सिकिनँ तर मेरो नजिकका साथीहरूलाई पनि भेटें।", en: "The language barriers were isolating. Through their community workshops, I not only learned basic Croatian but also met my closest friends." },
+    "quote2_attr": { hr: "— Radnik u ugostiteljstvu, Split", ne: "— आतिथ्य सत्कार कामदार, स्प्लिट", en: "— Hospitality worker, Split" },
+    "quote3_text": { hr: "Partnerstvo osigurava poštivanje ljudskih prava. Njihov tim je profesionalan i bitan za pošteno tržište rada.", ne: "क्रोनफसँगको साझेदारीले हाम्रो आपूर्ति श्रृंखलाले मानव अधिकारको सम्मान गर्छ भनी सुनिश्चित गर्दछ। तिनीहरूको प्रो बोनो कानूनी टोली पेशेवर र निष्पक्ष श्रम बजारको लागि आवश्यक छ।", en: "Partnering with CRONEF ensures our supply chain respects human rights. Their pro bono legal team is professional and essential for a fair labor market." },
+    "quote3_attr": { hr: "— Lokalni poslovni partner, Osijek", ne: "— स्थानीय व्यापार साझेदार, ओसिजेक", en: "— Local Business Partner, Osijek" },
+
     
     "about_reg": { hr: "Registracija", ne: "दर्ता", en: "Registration" },
     "about_reg_org": { hr: "Organizacija", ne: "संस्था", en: "Organisation" },
@@ -446,3 +453,87 @@ const translations = {
       window.requestAnimationFrame(step);
     }
   }
+
+// -----------------------------------------------------------
+// ANIME.JS GLOBAL ANIMATIONS
+// -----------------------------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  if (typeof anime !== 'undefined') {
+    
+    // Scroll Reveal Animation
+    const revealElements = document.querySelectorAll('.reveal');
+    if (revealElements.length > 0) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            anime({
+              targets: entry.target,
+              opacity: [0, 1],
+              translateY: [20, 0],
+              duration: 800,
+              easing: 'easeOutCubic'
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      
+      revealElements.forEach(el => revealObserver.observe(el));
+    }
+
+    // Button Hover
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        anime.remove(btn);
+        anime({ targets: btn, scale: 1.03, duration: 250, easing: 'easeOutQuad' });
+      });
+      btn.addEventListener('mouseleave', () => {
+        anime.remove(btn);
+        anime({ targets: btn, scale: 1, duration: 250, easing: 'easeOutQuad' });
+      });
+    });
+
+    // Card Hover
+    const cards = document.querySelectorAll('.about-card, .news-card, .gallery-item, .metric-item');
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        anime.remove(card);
+        anime({ targets: card, translateY: -6, duration: 300, easing: 'easeOutQuad' });
+      });
+      card.addEventListener('mouseleave', () => {
+        anime.remove(card);
+        anime({ targets: card, translateY: 0, duration: 300, easing: 'easeOutQuad' });
+      });
+    });
+  }
+});
+
+// -----------------------------------------------------------
+// SWIPER.JS INITIALIZATION
+// -----------------------------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  if (typeof Swiper !== 'undefined') {
+    const swiper = new Swiper('.testimonials-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        }
+      }
+    });
+  }
+});
