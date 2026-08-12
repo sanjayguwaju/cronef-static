@@ -914,3 +914,14 @@
   color: var(--ink-soft);
   margin: 0;
 }
+
+/* ---------- METRICS ---------- */
+.metrics-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 768px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 30px !important;
+  }
+}

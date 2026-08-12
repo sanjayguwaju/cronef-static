@@ -1,4 +1,7 @@
 const translations = {
+    "metric_workers": { hr: "Radnici kojima je pružena pomoć", ne: "सहयोग प्राप्त कामदारहरू", en: "Workers Assisted" },
+    "metric_cases": { hr: "Dobiveni pravni slučajevi", ne: "जितेका कानुनी मुद्दाहरू", en: "Legal Cases Won" },
+    "metric_cities": { hr: "Aktivni gradovi", ne: "सक्रिय शहरहरू", en: "Active Cities" },
     "nav_about": { hr: "O nama", ne: "हाम्रो बारेमा", en: "About Us" },
     "nav_about_1": { hr: "Tko smo mi", ne: "हामी को हौं", en: "Who We Are" },
     "nav_about_2": { hr: "Temeljne vrijednosti", ne: "मूल मूल्यहरू", en: "Core Values" },
@@ -400,3 +403,35 @@ const translations = {
       searchResults.innerHTML = html;
     }
   });
+
+  // Metrics animation
+  const metricNumbers = document.querySelectorAll('.metric-number');
+  if (metricNumbers.length > 0) {
+    const metricsObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          const target = parseInt(entry.target.getAttribute('data-target'));
+          const suffix = entry.target.getAttribute('data-suffix') || '';
+          animateValue(entry.target, 0, target, 2000, suffix);
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    metricNumbers.forEach(el => metricsObserver.observe(el));
+
+    function animateValue(obj, start, end, duration, suffix) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const easeProgress = progress * (2 - progress);
+        let currentVal = Math.floor(easeProgress * (end - start) + start);
+        obj.innerHTML = currentVal + suffix;
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+  }
